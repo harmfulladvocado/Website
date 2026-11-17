@@ -36,7 +36,6 @@ const config: BuildConfig = {
 }
 
 const STATIC_FILES: StaticCopy[] = [
-  { dest: 'dist/CNAME', source: 'CNAME' },
   { dest: 'dist/llms.txt', source: 'src/llms.txt' },
   { dest: 'dist/robots.txt', source: 'src/robots.txt' },
   { dest: 'dist/site.webmanifest', source: 'src/site.webmanifest' },
@@ -217,7 +216,6 @@ function verifyOutput(): void {
     config.htmlFallbackDest,
     config.outfile,
     config.cssDest,
-    'dist/CNAME',
     'dist/robots.txt',
     'dist/sitemap.xml',
     'dist/images/pfp.svg',
